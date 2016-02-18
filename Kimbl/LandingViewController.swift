@@ -1,19 +1,19 @@
 //
-//  ViewController.swift
+//  LandingViewController.swift
 //  Kimbl
 //
-//  Created by Sahil Deshpande on 28/01/16.
+//  Created by Sahil Deshpande on 04/02/16.
 //  Copyright © 2016 KimblApp. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class LandingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
+        // Do any additional setup after loading the view.
         // Code to calculate screen width on runtime and based on that choose the appropriate image
         let screenWidth = Int(UIScreen.mainScreen().bounds.size.width)
         let bgImage = UIImage(named: "bg-" + String(screenWidth) + "w")
@@ -29,19 +29,22 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         
         let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn")
-
-        if !isUserLoggedIn {
-            self.performSegueWithIdentifier("landingView", sender: self)
+        
+        if isUserLoggedIn {
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
         
     }
+    
 
-    @IBAction func logoutButtonTapped(sender: AnyObject) {
-        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isUserLoggedIn")
-        NSUserDefaults.standardUserDefaults().synchronize()
-        self.performSegueWithIdentifier("landingView", sender: self)
-        
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
 
 }
-

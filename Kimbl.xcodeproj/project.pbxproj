@@ -14,6 +14,9 @@
 		75508ADA1C5A2C90007B8251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75508AD81C5A2C90007B8251 /* LaunchScreen.storyboard */; };
 		75508AE51C5A2C90007B8251 /* KimblTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75508AE41C5A2C90007B8251 /* KimblTests.swift */; };
 		75508AF01C5A2C90007B8251 /* KimblUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75508AEF1C5A2C90007B8251 /* KimblUITests.swift */; };
+		75508B061C636CF1007B8251 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75508B051C636CF1007B8251 /* LandingViewController.swift */; };
+		75508B081C6A108E007B8251 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75508B071C6A108E007B8251 /* LoginViewController.swift */; };
+		75508B0A1C6A227D007B8251 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75508B091C6A227D007B8251 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		75508AEB1C5A2C90007B8251 /* KimblUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KimblUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75508AEF1C5A2C90007B8251 /* KimblUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimblUITests.swift; sourceTree = "<group>"; };
 		75508AF11C5A2C90007B8251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75508B051C636CF1007B8251 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		75508B071C6A108E007B8251 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		75508B091C6A227D007B8251 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				75508AD61C5A2C90007B8251 /* Assets.xcassets */,
 				75508AD81C5A2C90007B8251 /* LaunchScreen.storyboard */,
 				75508ADB1C5A2C90007B8251 /* Info.plist */,
+				75508B051C636CF1007B8251 /* LandingViewController.swift */,
+				75508B071C6A108E007B8251 /* LoginViewController.swift */,
+				75508B091C6A227D007B8251 /* CreateAccountViewController.swift */,
 			);
 			path = Kimbl;
 			sourceTree = "<group>";
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75508B0A1C6A227D007B8251 /* CreateAccountViewController.swift in Sources */,
+				75508B081C6A108E007B8251 /* LoginViewController.swift in Sources */,
 				75508AD21C5A2C90007B8251 /* ViewController.swift in Sources */,
+				75508B061C636CF1007B8251 /* LandingViewController.swift in Sources */,
 				75508AD01C5A2C90007B8251 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
